@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\thunder_branding_helper\Plugin\Block;
+namespace Drupal\thunder_branding\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 

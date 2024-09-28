@@ -1,0 +1,6 @@
+{
+    "name": "thunder/thunder_branding",
+    "description": "Functionalities and assets for Thunder branding.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later"
+}

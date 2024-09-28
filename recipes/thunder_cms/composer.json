@@ -8,7 +8,7 @@
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-recommended": "~11.0",
         "thunder/thunder_admin_theme": "*",
-        "thunder/thunder_branding": "*",
+        "thunder/thunder_frontend_theme": "*",
         "thunder/thunder_sitemap": "*"
     }
 }

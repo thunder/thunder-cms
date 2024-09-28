@@ -4,7 +4,7 @@ type: 'Branding'
 recipes:
   - core/recipes/core_recommended_front_end_theme
 install:
-  - thunder_branding_helper
+  - thunder_branding
 config:
   import:
     olivero:
@@ -15,10 +15,10 @@ config:
       simpleConfigUpdate:
         logo:
           use_default: false
-          path: modules/contrib/thunder_branding_helper/files/images/logo.svg
+          path: modules/contrib/thunder_branding/files/images/logo.svg
         favicon:
           mimetype: image/vnd.microsoft.icon
-          path: modules/contrib/thunder_branding_helper/files/images/favicon.ico
+          path: modules/contrib/thunder_branding/files/images/favicon.ico
           use_default: false
     block.block.olivero_powered:
       simpleConfigUpdate:

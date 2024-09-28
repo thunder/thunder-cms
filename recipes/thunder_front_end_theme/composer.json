@@ -1,11 +1,11 @@
 {
-    "name": "thunder/thunder_branding",
+    "name": "thunder/thunder_frontend_theme",
     "type": "drupal-recipe",
-    "description": "Setup Thunder branding.",
+    "description": "Setup Thunder Frontend Theme.",
     "license": "GPL-2.0-or-later",
     "minimum-stability": "stable",
     "require": {
         "drupal/core": "~11.0",
-        "thunder/thunder_branding_helper": "*"
+        "thunder/thunder_branding": "*"
     }
 }

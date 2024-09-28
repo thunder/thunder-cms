@@ -4,5 +4,5 @@ type: 'Site'
 recipes:
   - core/recipes/standard
   - thunder_admin_theme
-  - thunder_branding
+  - thunder_frontend_theme
   - thunder_sitemap
