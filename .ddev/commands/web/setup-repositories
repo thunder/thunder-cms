@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+#
+# Adds all Thunder CMS components as path repositories.
+find ./modules -maxdepth 1 -type d -name 'thunder_*' -exec composer config repositories.{} path {} ';'
+find ./recipes -maxdepth 1 -type d -name 'thunder_*' -exec composer config repositories.{} path {} ';'

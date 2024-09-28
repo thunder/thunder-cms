@@ -1,0 +1,11 @@
+{
+    "name": "thunder/thunder_branding",
+    "type": "drupal-recipe",
+    "description": "Setup Thunder branding.",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "stable",
+    "require": {
+        "drupal/core": "~11.0",
+        "thunder/thunder_branding_helper": "*"
+    }
+}

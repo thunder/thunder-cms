@@ -1,0 +1,22 @@
+name: 'Thunder Sitemap'
+description: 'Provides configuration and media for branding of Thunder.'
+type: 'SEO'
+install:
+  - simple_sitemap
+config:
+  import:
+    simple_sitemap:
+      - simple_sitemap.type.default_hreflang
+      - simple_sitemap.sitemap.default
+      - simple_sitemap.type.index
+      - simple_sitemap.sitemap.index
+  actions:
+    simple_sitemap.settings:
+      simpleConfigUpdate:
+        skip_untranslated: false
+        xsl: false
+        default_variant: index
+    simple_sitemap.sitemap.index:
+      simpleConfigUpdate:
+        status: true
+

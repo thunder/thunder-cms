@@ -1,0 +1,14 @@
+{
+    "name": "thunder/thunder_cms",
+    "type": "drupal-recipe",
+    "description": "Install Thunder CMS.",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "stable",
+    "require": {
+        "drupal/core-composer-scaffold": "^11.0",
+        "drupal/core-recommended": "~11.0",
+        "thunder/thunder_admin_theme": "*",
+        "thunder/thunder_branding": "*",
+        "thunder/thunder_sitemap": "*"
+    }
+}

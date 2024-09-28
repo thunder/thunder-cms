@@ -1,0 +1,11 @@
+{
+    "name": "thunder/thunder_admin_theme",
+    "type": "drupal-recipe",
+    "description": "Setup the admin experience.",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "stable",
+    "require": {
+        "drupal/core": "~11.0",
+        "drupal/gin": "^3-rc11"
+    }
+}

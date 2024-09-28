@@ -1,0 +1,33 @@
+name: 'Thunder Branding'
+description: 'Configuration and media for branding of Thunder.'
+type: 'Branding'
+recipes:
+  - core/recipes/core_recommended_front_end_theme
+install:
+  - thunder_branding_helper
+config:
+  import:
+    olivero:
+      - block.block.olivero_powered
+      - block.block.olivero_site_branding
+  actions:
+    olivero.settings:
+      simpleConfigUpdate:
+        logo:
+          use_default: false
+          path: modules/contrib/thunder_branding_helper/files/images/logo.svg
+        favicon:
+          mimetype: image/vnd.microsoft.icon
+          path: modules/contrib/thunder_branding_helper/files/images/favicon.ico
+          use_default: false
+    block.block.olivero_powered:
+      simpleConfigUpdate:
+        plugin: thunder_powered_by_block
+        settings:
+          label: 'Powered by Thunder'
+    block.block.olivero_site_branding:
+      simpleConfigUpdate:
+        settings:
+          label: 'Site branding'
+          use_site_name: false
+

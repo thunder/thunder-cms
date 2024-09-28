@@ -1,0 +1,8 @@
+name: 'Thunder CNS'
+description: 'Provides Thunder site with publishing features pre-configured.'
+type: 'Site'
+recipes:
+  - core/recipes/standard
+  - thunder_admin_theme
+  - thunder_branding
+  - thunder_sitemap

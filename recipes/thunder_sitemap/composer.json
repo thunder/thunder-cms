@@ -1,0 +1,11 @@
+{
+    "name": "thunder/thunder_sitemap",
+    "type": "drupal-recipe",
+    "description": "Setup Sitemaps.",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "stable",
+    "require": {
+        "drupal/core": "~11.0",
+        "drupal/simple_sitemap": "^4.2"
+    }
+}

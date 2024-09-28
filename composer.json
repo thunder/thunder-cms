@@ -1,0 +1,129 @@
+{
+    "name": "thunder/thunder-project",
+    "description": "Project template for Thunder CMS projects",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Daniel Bosen",
+            "email": "daniel.bosen@burda.com"
+        },
+        {
+            "name": "Christian Fritsch",
+            "email": "christian.fritsch@burda.com"
+        },
+        {
+            "name": "Alex Pott",
+            "email": "alex.a.pott@gmail.com"
+        },
+        {
+            "name": "Volker Killesreiter",
+            "email": "volker.killesreiter@burda.com"
+        }
+    ],
+    "repositories": {
+        "./modules/thunder_branding_helper": {
+            "type": "path",
+            "url": "./modules/thunder_branding_helper"
+        },
+        "./recipes/thunder_sitemap": {
+            "type": "path",
+            "url": "./recipes/thunder_sitemap"
+        },
+        "./recipes/thunder_cms": {
+            "type": "path",
+            "url": "./recipes/thunder_cms"
+        },
+        "./recipes/thunder_branding": {
+            "type": "path",
+            "url": "./recipes/thunder_branding"
+        },
+        "./recipes/thunder_admin_theme": {
+            "type": "path",
+            "url": "./recipes/thunder_admin_theme"
+        },
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "require": {
+        "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^2.0@beta",
+        "drush/drush": "^13.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "thunder/thunder_cms": "*"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^11.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "docroot/recipes/{$name}": [
+                "type:drupal-recipe"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "enable-patching": true,
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "docroot/"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "process-timeout": 2000,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "php-http/discovery": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "oomphinc/composer-installers-extender": true
+        }
+    }
+}
