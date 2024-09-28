@@ -2,6 +2,7 @@ name: 'Admin Theme'
 description: 'Setup the admin UI.'
 type: 'Backend'
 install:
+  - thunder_branding
   - gin
   - gin_toolbar
   - help
@@ -12,5 +13,9 @@ config:
     navigation: '*'
   actions:
     system.theme:
-      simple_config_update:
+      simpleConfigUpdate:
         admin: gin
+    gin.settings:
+      simpleConfigUpdate:
+        preset_accent_color: custom
+

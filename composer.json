@@ -22,14 +22,6 @@
         }
     ],
     "repositories": {
-        "./recipes/thunder_front_end_theme": {
-            "type": "path",
-            "url": "./recipes/thunder_front_end_theme"
-        },
-        "./modules/thunder_branding": {
-            "type": "path",
-            "url": "./modules/thunder_branding"
-        },
         "./recipes/thunder_sitemap": {
             "type": "path",
             "url": "./recipes/thunder_sitemap"
@@ -42,11 +34,19 @@
             "type": "path",
             "url": "./recipes/thunder_admin_theme"
         },
-        "drupal": {
+        "./recipes/thunder_front_end_theme": {
+            "type": "path",
+            "url": "./recipes/thunder_front_end_theme"
+        },
+        "./modules/thunder_branding": {
+            "type": "path",
+            "url": "./modules/thunder_branding"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "packagist": {
+        "1": {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
