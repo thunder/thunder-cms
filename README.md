@@ -9,7 +9,7 @@ Thunder in recipes
 5. Start the project `ddev start`
 6. Install dependencies `ddev composer install`
 7. Install the project `ddev drush site:install recipes/thunder_cms`
-8. Open the project in the browser `ddev uli`
+8. Open the project in the browser `ddev drush uli`
 
 ## Update repositories in composer.json
 When adding new recipes or modules, the composer.json has to be updated:
