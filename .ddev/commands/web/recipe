@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+cd $DDEV_DOCROOT && php core/scripts/drupal recipe $1
